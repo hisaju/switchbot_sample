@@ -1,0 +1,18 @@
+.bd-masthead.mb-3
+  .container.px-4.px-md-3
+    .row
+      .col-3
+        .card.border-primary
+          .card-header
+            h5.card-title 温度
+          .card-body
+            h2 = "#{@thermometer.temperature.to_s}℃"
+      .col-3
+        .card.border-success
+          .card-header
+            h5.card-title 湿度
+          .card-body
+            h2 = "#{@thermometer.humidity}%"
+
+
+      

@@ -1,4 +1,9 @@
 class AlexasController < ApplicationController
+
+  def index
+    @thermometer = Thermometer.new
+  end
+
   def create
     alexa = AlexaRuby.new(request.body.read)
     RoomLight.new.click

@@ -2,3 +2,4 @@ switchbot:
   token: <%= Rails.application.credentials.dig(:switchbot, :token) %>
   air_conditioner_device_id: <%= Rails.application.credentials.dig(:switchbot, :air_conditioner_device_id) %>
   room_light_device_id: <%= Rails.application.credentials.dig(:switchbot, :room_light_device_id) %>
+  thermometer_device_id: <%= Rails.application.credentials.dig(:switchbot, :thermometer_device_id) %>
